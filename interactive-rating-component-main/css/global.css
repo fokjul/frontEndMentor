@@ -1,0 +1,176 @@
+/* Colors*/
+/* Fonts*/
+body {
+  background-color: hsl(216, 12%, 8%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body .mainContainer {
+  background-color: hsl(213, 19%, 18%);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 346px;
+  padding: 32px;
+  border-radius: 32px;
+}
+body .mainContainer .wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+body .mainContainer .wrapper div {
+  background-color: hsla(217, 12%, 63%, 0.1);
+  border-radius: 24px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Overpass;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: hsl(216, 12%, 54%);
+  /* Start Image*/
+}
+body .mainContainer .wrapper div img {
+  width: 17px;
+  height: 16px;
+}
+body .mainContainer .description h2 {
+  color: hsl(0, 0%, 100%);
+  font-family: Overpass;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+body .mainContainer .description p {
+  color: hsl(216, 12%, 54%);
+  font-family: Overpass;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 0px;
+}
+body .mainContainer .grid-numbers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body .mainContainer .grid-numbers button {
+  background-color: hsla(217, 12%, 63%, 0.1);
+  border: none;
+  border-radius: 24px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Overpass;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: hsl(216, 12%, 54%);
+  cursor: pointer;
+}
+body .mainContainer .grid-numbers button:hover {
+  background-color: hsl(216, 12%, 54%);
+  color: hsl(0, 0%, 100%);
+}
+body .mainContainer .grid-numbers button:active {
+  background-color: hsl(25, 97%, 53%);
+}
+body .mainContainer #btn-submit {
+  background-color: hsl(25, 97%, 53%);
+  border: none;
+  border-radius: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: hsl(0, 0%, 100%);
+  font-family: Overpass;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+body .mainContainer #btn-submit:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+body .thankYouPageWrapper {
+  display: flex;
+  justify-content: center;
+}
+body .thankYouPageWrapper div {
+  background-color: hsla(217, 12%, 63%, 0.1);
+  border-radius: 24px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Overpass;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: hsl(216, 12%, 54%);
+  /* Start Image*/
+}
+body .thankYouPageWrapper div img {
+  width: 17px;
+  height: 16px;
+}
+body .thankYouPageDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body .thankYouPageDescription h2 {
+  color: hsl(0, 0%, 100%);
+  font-family: Overpass;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: inline;
+}
+body .thankYouPageDescription p {
+  color: hsl(216, 12%, 54%);
+  font-family: Overpass;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 0px;
+}
+body .ratingResults {
+  background-color: hsla(217, 12%, 63%, 0.1);
+  border: none;
+  border-radius: 24px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Overpass;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: hsl(25, 97%, 53%);
+}
+body .attribution {
+  color: hsl(0, 0%, 100%);
+}
