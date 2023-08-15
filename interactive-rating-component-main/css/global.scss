@@ -37,6 +37,10 @@
     line-height: normal;
 }
 
+html {
+    height: 100%;
+}
+
 body 
 {
     background-color: $neutral-very-dark-blue;
@@ -44,16 +48,20 @@ body
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 100%;
 
     .mainContainer 
     {
         background-color: $neutral-dark-blue;
         display: flex;
         flex-direction: column;
-        gap: 32px;
+        align-items: space-between;
         width: 346px;
+        gap: 32px;
+        max-height: 412px;
         padding: 32px;
         border-radius: 32px;
+        margin-bottom: 16px;
     
         .wrapper {
             display: flex;
@@ -83,6 +91,7 @@ body
             h2 {
                 color: $neutral-white;
                 @include header-h2;
+                color: $neutral-white;
                 margin-top: 0px;
                 margin-bottom: 0px;
             }
@@ -100,9 +109,8 @@ body
             flex-direction: row;
             justify-content: space-between;
 
-            button {
+            .button {
                 background-color: $neutral-grey-opac10;
-                border: none;
                 border-radius: 24px;
                 width: 48px;
                 height: 48px;
@@ -111,16 +119,45 @@ body
                 align-items: center;
                 @include title;
                 color: $neutral-medium-grey;
-                cursor: pointer;
-            }
+                position: relative;
 
-            button:hover {
-                background-color: $neutral-medium-grey;
-                color: $neutral-white;
-            }
+                input[type="radio"] {
+                    cursor: pointer;
+                    margin: 0;
+                    opacity: 0;
+                    position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                }
 
-            button:active {
-                background-color: $primary-orange;
+                input[type="radio"]:hover + label {
+                background: $neutral-medium-grey;
+                color:$neutral-white;
+                width: 48px;
+                height: 48px;
+                border-radius: 24px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                }
+
+                input[type="radio"]:checked + label {
+                    background: $primary-orange;
+                    color:$neutral-white;
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 24px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                }
             }
         }
     
@@ -172,15 +209,13 @@ body
     .thankYouPageDescription {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-    
 
         h2 {
             color: $neutral-white;
             @include header-h2;
             margin-top: 0px;
             margin-bottom: 0px;
-            display: inline;
+            text-align: center;
             
         }
 
@@ -188,6 +223,7 @@ body
             color: $neutral-medium-grey;
             @include body-copy;
             margin-bottom: 0px;
+            text-align: center;
         }
     }
 
@@ -196,7 +232,8 @@ body
         background-color: $neutral-grey-opac10;
         border: none;
         border-radius: 24px;
-        height: 48px;
+        padding: 8px 20px;
+        margin: auto;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -207,6 +244,11 @@ body
     .attribution 
     {
         color: $neutral-white;
+        @include font-family;
+
+        a:link {
+            color: $neutral-white;
+        }
     }
 
 }
