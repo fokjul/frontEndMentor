@@ -1,0 +1,32 @@
+/* Fonts*/
+:root {
+    font-size: 15px;
+}
+
+@mixin font-family {
+    font-family: Overpass;
+}
+
+@mixin body-copy {
+    @include font-family;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@mixin header-h2 {
+    @include font-family;
+    font-size: 1.85rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+@mixin title {
+    @include font-family;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

@@ -1,51 +1,14 @@
-@import "small-screen";
+@use 'breakpoints';
+@use 'fonts';
+@use 'colors';
 
-/* Colors*/
-    $primary-orange: hsla(25, 97%, 53%, 1);
-    $neutral-very-dark-blue: hsla(216, 12%, 8%, 1);
-    $neutral-dark-blue: hsla(213, 19%, 18%, 1);
-    $neutral-medium-grey: hsla(216, 12%, 54%, 1);
-    $neutral-light-grey: hsla(217, 12%, 63%, 1);
-    $neutral-white: hsla(0, 0%, 100%, 1);
-    $neutral-grey-opac10: hsla(217, 12%, 63%, 0.1);
-
-
-/* Fonts*/
-@mixin font-family {
-    font-family: Overpass;
-}
-
-@mixin body-copy {
-    @include font-family;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-@mixin header-h2 {
-    @include font-family;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-@mixin title {
-    @include font-family;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-html {
+:root {
     height: 100%;
 }
 
 body 
 {
-    background-color: $neutral-very-dark-blue;
+    background-color: colors.$neutral-very-dark-blue;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,7 +17,7 @@ body
 
     .mainContainer 
     {
-        background-color: $neutral-dark-blue;
+        background-color: colors.$neutral-dark-blue;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -70,15 +33,15 @@ body
             justify-content: flex-start;
     
             div {
-                background-color: $neutral-grey-opac10;
+                background-color: colors.$neutral-grey-opac10;
                 border-radius: 24px;
                 width: 48px;
                 height: 48px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                @include title;
-                color: $neutral-medium-grey;
+                @include fonts.title;
+                color: colors.$neutral-medium-grey;
     
                 /* Start Image*/
                 img 
@@ -91,16 +54,16 @@ body
     
         .description {
             h2 {
-                color: $neutral-white;
-                @include header-h2;
-                color: $neutral-white;
+                color: colors.$neutral-white;
+                @include fonts.header-h2;
+                color: colors.$neutral-white;
                 margin-top: 0px;
                 margin-bottom: 0px;
             }
     
             p {
-                color: $neutral-medium-grey;
-                @include body-copy;
+                color: colors.$neutral-medium-grey;
+                @include fonts.body-copy;
                 margin-bottom: 0px;
             }
         }
@@ -112,15 +75,15 @@ body
             justify-content: space-between;
 
             .button {
-                background-color: $neutral-grey-opac10;
+                background-color: colors.$neutral-grey-opac10;
                 border-radius: 24px;
                 width: 48px;
                 height: 48px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                @include title;
-                color: $neutral-medium-grey;
+                @include fonts.title;
+                color: colors.$neutral-medium-grey;
                 position: relative;
 
                 input[type="radio"] {
@@ -135,8 +98,8 @@ body
                 }
 
                 input[type="radio"]:hover + label {
-                background: $neutral-medium-grey;
-                color:$neutral-white;
+                background: colors.$neutral-medium-grey;
+                color: colors.$neutral-white;
                 width: 48px;
                 height: 48px;
                 border-radius: 24px;
@@ -146,8 +109,8 @@ body
                 }
 
                 input[type="radio"]:checked + label {
-                    background: $primary-orange;
-                    color:$neutral-white;
+                    background: colors.$primary-orange;
+                    color:colors.$neutral-white;
                     width: 48px;
                     height: 48px;
                     border-radius: 24px;
@@ -165,21 +128,21 @@ body
     
         #btn-submit 
         {
-            background-color: $primary-orange;
+            background-color: colors.$primary-orange;
             border: none;
             border-radius: 24px; 
             padding-top: 16px;
             padding-bottom: 16px;
-            color: $neutral-white;
-            @include body-copy;
+            color: colors.$neutral-white;
+            @include fonts.body-copy;
             text-transform: uppercase;
             cursor: pointer;
         }
 
         #btn-submit:hover 
         {
-            background-color: $neutral-white;
-            color: $primary-orange;
+            background-color: colors.$neutral-white;
+            color: colors.$primary-orange;
         }
     }
 
@@ -188,15 +151,15 @@ body
         justify-content: center;
 
         div {
-            background-color: $neutral-grey-opac10;
+            background-color: colors.$neutral-grey-opac10;
             border-radius: 24px;
             width: 48px;
             height: 48px;
             display: flex;
             justify-content: center;
             align-items: center;
-            @include title;
-            color: $neutral-medium-grey;
+            @include fonts.title;
+            color: colors.$neutral-medium-grey;
 
             /* Start Image*/
             img 
@@ -212,8 +175,8 @@ body
         flex-direction: column;
 
         h2 {
-            color: $neutral-white;
-            @include header-h2;
+            color: colors.$neutral-white;
+            @include fonts.header-h2;
             margin-top: 0px;
             margin-bottom: 0px;
             text-align: center;
@@ -221,8 +184,8 @@ body
         }
 
         p {
-            color: $neutral-medium-grey;
-            @include body-copy;
+            color: colors.$neutral-medium-grey;
+            @include fonts.body-copy;
             margin-bottom: 0px;
             text-align: center;
         }
@@ -230,7 +193,7 @@ body
 
     .ratingResults 
     {
-        background-color: $neutral-grey-opac10;
+        background-color: colors.$neutral-grey-opac10;
         border: none;
         border-radius: 24px;
         padding: 8px 20px;
@@ -238,26 +201,26 @@ body
         display: flex;
         justify-content: center;
         align-items: center;
-        @include body-copy;
-        color: $primary-orange;
+        @include fonts.body-copy;
+        color: colors.$primary-orange;
     }
 
     .attribution 
     {
-        color: $neutral-white;
-        @include font-family;
+        color: colors.$neutral-white;
+        @include fonts.font-family;
 
         display: flex;
         flex-direction: row;
 
         a:link {
-            color: $neutral-white;
+            color: colors.$neutral-white;
         }
     }
 
 }
 
-@include smallScreen;
+@include breakpoints.smallScreen;
 
 
 

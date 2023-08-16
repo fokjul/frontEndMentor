@@ -1,5 +1,6 @@
+/* Breakpoint 570px */
 @mixin smallScreen {
-    @media only screen and (max-width: 470px) {
+    @media only screen and (max-width: 570px) {
         body {
             .mainContainer {
                 width: 289px;

@@ -1,6 +1,11 @@
-/* Colors*/
+/* Breakpoint 570px */
 /* Fonts*/
-html {
+:root {
+  font-size: 15px;
+}
+
+/* Colors*/
+:root {
   height: 100%;
 }
 
@@ -37,7 +42,7 @@ body .mainContainer .wrapper div {
   justify-content: center;
   align-items: center;
   font-family: Overpass;
-  font-size: 18px;
+  font-size: 1.2rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -51,7 +56,7 @@ body .mainContainer .wrapper div img {
 body .mainContainer .description h2 {
   color: hsl(0, 0%, 100%);
   font-family: Overpass;
-  font-size: 28px;
+  font-size: 1.85rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -62,7 +67,7 @@ body .mainContainer .description h2 {
 body .mainContainer .description p {
   color: hsl(216, 12%, 54%);
   font-family: Overpass;
-  font-size: 15px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -82,7 +87,7 @@ body .mainContainer .grid-numbers .button {
   justify-content: center;
   align-items: center;
   font-family: Overpass;
-  font-size: 18px;
+  font-size: 1.2rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -132,7 +137,7 @@ body .mainContainer #btn-submit {
   padding-bottom: 16px;
   color: hsl(0, 0%, 100%);
   font-family: Overpass;
-  font-size: 15px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -156,7 +161,7 @@ body .thankYouPageWrapper div {
   justify-content: center;
   align-items: center;
   font-family: Overpass;
-  font-size: 18px;
+  font-size: 1.2rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -174,7 +179,7 @@ body .thankYouPageDescription {
 body .thankYouPageDescription h2 {
   color: hsl(0, 0%, 100%);
   font-family: Overpass;
-  font-size: 28px;
+  font-size: 1.85rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -185,7 +190,7 @@ body .thankYouPageDescription h2 {
 body .thankYouPageDescription p {
   color: hsl(216, 12%, 54%);
   font-family: Overpass;
-  font-size: 15px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -202,7 +207,7 @@ body .ratingResults {
   justify-content: center;
   align-items: center;
   font-family: Overpass;
-  font-size: 15px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -218,7 +223,7 @@ body .attribution a:link {
   color: hsl(0, 0%, 100%);
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 570px) {
   body .mainContainer {
     width: 289px;
     gap: 24px;

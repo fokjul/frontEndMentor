@@ -53,12 +53,10 @@ document.querySelector('body').prepend(mainContainer);
 /* --- EVENTS --- */ 
 
 //Selecr Rating
-let isButtonClicked;
 document.querySelectorAll('.grid-numbers input').forEach((button) => 
 {
     button.addEventListener('click', function()
     { 
-        console.log(button.value);
         buttonValueSelected = button.value;
     });
     
@@ -69,7 +67,6 @@ document.querySelector('#btn-submit').addEventListener('click', ()=>
 {
     mainContainer.innerHTML = thankYouPage;
     document.querySelector('.ratingResults').innerHTML = `You selected ${buttonValueSelected} out of 5`;
-    console.log(mainContainer);
 })
 
 
