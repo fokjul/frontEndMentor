@@ -247,6 +247,9 @@ body
         color: $neutral-white;
         @include font-family;
 
+        display: flex;
+        flex-direction: row;
+
         a:link {
             color: $neutral-white;
         }
