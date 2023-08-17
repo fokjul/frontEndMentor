@@ -10,6 +10,11 @@
 body {
   background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 96px;
+  gap: 24px;
 }
 body .main-container {
   width: 920px;
@@ -18,6 +23,16 @@ body .main-container {
   border-radius: 24px;
   display: flex;
   flex-direction: row;
+  box-shadow: 0 30px 30px hsl(247, 44%, 52%);
+}
+body .main-container .illustration-container {
+  position: relative;
+}
+body .main-container .illustration-container .box {
+  position: absolute;
+  top: 232px;
+  left: -124px;
+  z-index: 100;
 }
 body .main-container .faq-container {
   padding: 64px 96px 80px 0;
@@ -51,6 +66,7 @@ body .main-container .faq-container .row-container button {
   justify-content: space-between;
   align-items: center;
   font-family: inherit;
+  cursor: pointer;
 }
 body .main-container .faq-container .row-container button:hover {
   color: hsl(14, 88%, 65%);
@@ -63,11 +79,13 @@ body .main-container .faq-container .row-container .description p {
   font-weight: 400;
   color: hsl(240, 6%, 50%);
   margin-bottom: 0;
+  max-width: 308px;
 }
 body .attribution {
   font-size: 11px;
   text-align: center;
+  color: hsl(0, 0%, 100%);
 }
 body .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(0, 0%, 100%);
 }
