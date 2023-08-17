@@ -1,0 +1,24 @@
+:root {
+    font-size: 12px;
+    font-family: Kumbh Sans;
+}
+
+@mixin title {
+    font-size: 2.6rem;
+    font-weight: 700;
+}
+
+@mixin subtitle-bold {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+@mixin subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+@mixin body-copy {
+    font-size: 1rem;
+    font-weight: 400;
+}
