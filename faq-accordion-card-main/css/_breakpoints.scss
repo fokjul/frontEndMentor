@@ -1,0 +1,17 @@
+/* Breakpoint 1200px */
+@use 'colors';
+@use 'fonts';
+
+@mixin smallScreen {
+    @media only screen and (max-width: 1200px) {
+        body {
+            .main-container {
+                width: 328px;
+                background-color: colors.$neutral-white;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+            }
+        }
+    }
+}
