@@ -13,7 +13,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 96px;
     gap: 24px;
     
     .main-container {
@@ -26,10 +25,11 @@ body {
         justify-content: flex-end;
         box-shadow: 0 30px 30px colors.$shadow; 
         position: relative;
+        margin-top: 96px;
         
         picture {
             position: absolute;
-            left: -124px;
+            left: -125px;
         }
 
         .faq-container {
