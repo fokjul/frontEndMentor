@@ -15,7 +15,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 96px;
 }
 body .advice-container {
   background-color: hsl(217, 19%, 24%);
@@ -26,6 +25,7 @@ body .advice-container {
   flex-direction: column;
   align-items: center;
   position: relative;
+  margin-top: 96px;
 }
 body .advice-container p:first-child {
   font-family: Manrope;
