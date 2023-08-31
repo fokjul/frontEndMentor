@@ -1,0 +1,29 @@
+/* Fonts*/
+:root {
+    font-size: 28px;
+}
+
+@mixin font-family {
+    font-family: Manrope;
+}
+
+@mixin body-copy {
+    @include font-family;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.28px;
+    text-align: center;
+}
+
+@mixin caption {
+    @include font-family;
+    font-size: 0.4rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 4.8px;
+    text-transform: uppercase;
+    text-align: center;
+}
