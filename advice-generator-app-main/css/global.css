@@ -1,0 +1,59 @@
+/* Fonts*/
+:root {
+  font-size: 28px;
+}
+
+/* Colors*/
+:root {
+  height: 100%;
+}
+
+body {
+  background-color: hsl(218, 23%, 16%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .advice-container {
+  background-color: hsl(217, 19%, 24%);
+  width: 538px;
+  padding: 48px 44px 72px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .advice-container p:first-child {
+  font-family: Manrope;
+  font-size: 0.4rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 4.8px;
+  text-transform: uppercase;
+  text-align: center;
+  color: hsl(150, 100%, 66%);
+  margin-bottom: 0;
+}
+body .advice-container p:last-child {
+  font-family: Manrope;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: -0.28px;
+  text-align: center;
+  color: hsl(193, 38%, 86%);
+  width: auto;
+}
+body .attribution {
+  color: hsl(193, 38%, 86%);
+  font-family: Manrope;
+  font-size: 0.4rem;
+  display: flex;
+  flex-direction: row;
+}
+body .attribution a:link {
+  color: hsl(193, 38%, 86%);
+}
