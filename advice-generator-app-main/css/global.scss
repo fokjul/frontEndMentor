@@ -1,5 +1,6 @@
 @use 'fonts';
 @use 'colors';
+@use 'breakpoints';
 
 :root {
   height: 100%;
@@ -14,37 +15,56 @@ body {
 
   .advice-container {
     background-color: colors.$neutral-dark-grayish-blue;
-    width: 538px;
+    width: auto;
     padding: 48px 44px 72px;
     border-radius: 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 
     p:first-child {
       @include fonts.caption;
       color: colors.$primary-neon-green;
-      margin-bottom: 0;
+      
     }
 
-    p:last-child {
+    p:nth-child(2), .advicePlaceholder{
       @include fonts.body-copy;
       color: colors.$primary-light-cyan;
-      width: auto;
+      width: 450px;
+      margin-top: 0;
+    }
+
+    button {
+      border: none;
+      background-color: colors.$primary-neon-green;
+      border-radius: 36px;
+      padding: 20px;
+      position: absolute;
+      bottom: -32px;
+      height: 64px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      box-shadow: 0 0 30px colors.$primary-neon-green;
     }
   }
 
-  .attribution 
-    {
+  .attribution {
+    color: colors.$primary-light-cyan;
+    @include fonts.font-family;
+    font-size: 0.4rem;
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    letter-spacing: 2px;
+
+    a:link {
         color: colors.$primary-light-cyan;
-        @include fonts.font-family;
-        font-size: 0.4rem;
-
-        display: flex;
-        flex-direction: row;
-
-        a:link {
-            color: colors.$primary-light-cyan;
-        }
     }
+  }
 }
+
+@include breakpoints.smallScreen;

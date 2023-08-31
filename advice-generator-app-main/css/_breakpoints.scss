@@ -1,4 +1,27 @@
 /* Breakpoint 570px */
 @mixin smallScreen {
-    @media only screen and (max-width: 570px) {}
+    @media only screen and (max-width: 650px) {
+        
+        body {
+            .advice-container {
+                width: auto;
+                padding: 40px 24px 72px;
+            
+                p:nth-child(2), .advicePlaceholder{
+                    width: 295px;
+                }
+            }
+
+            .attribution {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        
+    }
 }
