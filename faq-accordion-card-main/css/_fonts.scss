@@ -1,3 +1,6 @@
+$font-weight-regular: 400;
+$font-weight-bold:    700;
+
 :root {
     font-size: 12px;
     font-family: Kumbh Sans;
@@ -5,20 +8,20 @@
 
 @mixin title {
     font-size: 2.6rem;
-    font-weight: 700;
+    font-weight: $font-weight-bold;
 }
 
 @mixin subtitle-bold {
     font-size: 1.2rem;
-    font-weight: 700;
+    font-weight: $font-weight-bold;
 }
 
 @mixin subtitle {
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: $font-weight-regular;
 }
 
 @mixin body-copy {
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: $font-weight-regular;
 }
