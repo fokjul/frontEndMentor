@@ -13,10 +13,12 @@ Array.from(acc).forEach((singleAccPanel) =>{
         if(panel.style.display === "block"){
             panel.style.display = "none";
             icon.style.transform = "rotate(0deg)";
+            this.style.fontWeight = "400";
         }
         else {
-            panel.style.display = "block"
-            icon.style.transform = "rotate(180deg)"
+            panel.style.display = "block";
+            icon.style.transform = "rotate(180deg)";
+            this.style.fontWeight = "700";
         }
 
         //keep only one panel open at a time

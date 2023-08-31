@@ -1,0 +1,14 @@
+/* Fonts*/
+:root {
+  font-size: 28px;
+}
+
+/* Colors*/
+body {
+  background-color: white;
+}
+body .formContainer {
+  display: grid;
+  grid-template-columns: 0.25fr 0.75fr 1fr;
+  gap: 8px;
+}

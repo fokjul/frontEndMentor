@@ -1,5 +1,6 @@
 @use 'colors';
 @use 'fonts';
+@use 'breakpoints';
 
 :root {
     height: 100%;
@@ -8,6 +9,7 @@
 body {
     background-image: linear-gradient(colors.$bg-gradient-top, colors.$bg-gradient-bottom);
     background-repeat: no-repeat;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,10 +29,15 @@ body {
             position: relative;
 
             .box {
+                background-image: url(/images/illustration-box-desktop.svg);
                 position: absolute;
                     top: 232px;
                     left: -124px;
                     z-index: 100;
+            }
+
+            .illustration {
+                background-image: url(/images/illustration.svg);
             }
         }
         
@@ -96,5 +103,7 @@ body {
         }
     }
 }
+
+@include breakpoints.smallScreen
 
 

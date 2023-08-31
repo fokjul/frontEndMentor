@@ -1,0 +1,13 @@
+@use 'fonts';
+@use 'colors';
+
+body {
+  background-color: white;
+  
+  .formContainer {
+    display: grid;
+    grid-template-columns: 0.25fr 0.75fr 1fr;
+    gap: 8px;
+
+  }
+}

@@ -1,0 +1,10 @@
+/* Breakpoint 1200px */
+@mixin smallScreen {
+    @media only screen and (max-width: 1200px) {
+        body {
+            img[src*="images/illustration-box-desktop.svg"]{
+                background-image: url("../images/illustration-woman-online-mobile.svg");
+            }
+        }
+    }
+}
