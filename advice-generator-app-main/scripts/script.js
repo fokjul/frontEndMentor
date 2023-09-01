@@ -8,7 +8,7 @@ const advicePlaceholder = document.querySelector('.advicePlaceholder');
 
 document.querySelector('button').addEventListener('click', function() {
     advicePlaceholder.remove();
-    fetch('https://api.adviceslip.com/advice')
+    fetch('https://api.adviceslip.com/advice', {cache: "no-cache"})
     .then (response => response.json())
     .then (json => {
         document.querySelector('.adviceId').innerHTML = `Advice #${json.slip.id}`;
