@@ -12,7 +12,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 96px;
+  
 
   .advice-container {
     background-color: colors.$neutral-dark-grayish-blue;
@@ -23,6 +23,7 @@ body {
     flex-direction: column;
     align-items: center;
     position: relative;
+    margin-top: 96px;
 
     p:first-child {
       @include fonts.caption;

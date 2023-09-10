@@ -1,0 +1,52 @@
+@use 'fonts';
+@use 'colors';
+@use 'spacing';
+
+@mixin button-primary-reg {
+    height: 55px;
+    border: none;
+    border-radius: spacing.$four;
+    color: colors.$neutral-white;
+    padding-left: spacing.$twelve;
+    padding-right: spacing.$twelve;
+    @include fonts.body-copy-bold;
+    background: linear-gradient(90deg, colors.$accent-cyan, colors.$accent-blue);
+    cursor: pointer;
+}
+
+@mixin button-hover {
+    background: colors.$accent-cyan;
+}
+
+@mixin button-active {
+    background: colors.$accent-blue;
+}
+
+@mixin button-primary-small {
+    height: 48px;
+    border: none;
+    border-radius: spacing.$four;
+    color: colors.$neutral-white;
+    padding-left: spacing.$three;
+    padding-right: spacing.$three;
+    @include fonts.body-copy-bold;
+    background: linear-gradient(90deg, colors.$accent-cyan, colors.$accent-blue);
+    cursor: pointer;
+}
+
+@mixin logo {
+    width: clamp(81px, 15vw, 176px); 
+    height: clamp(24px, 4.4vw, 52px); 
+}
+
+@mixin link {
+    text-decoration: none;
+    color: colors.$neutral-white;
+    @include fonts.body-copy-regular;
+    cursor: pointer;
+}
+
+@mixin link-hover {
+    text-decoration: underline;
+    
+}

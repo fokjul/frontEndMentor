@@ -1,0 +1,222 @@
+/* Breakpoint 570px */
+@use 'fonts';
+@use 'colors';
+@use 'spacing';
+@use 'components';
+
+    // @media only screen and (min-width: 1441px) {
+        
+    // }
+    // @media only screen and (min-width: 745px) and (max-width: 1440px) {
+        
+    // }
+
+    // @media only screen and (min-width: 668px) and (max-width: 744px) {
+
+    // }
+
+    // @media only screen and (min-width: 376px) and (max-width: 667px) {
+
+    // }
+
+    // @media only screen and (max-width: 375px) {
+
+    // }
+
+@mixin mediumScreen {
+    @media only screen and (min-width: 668px) and (max-width: 834px) {
+        body {
+
+
+
+            footer {
+                .footer-section {
+
+                    img[src*="logo"] {
+                        align-self: center;
+                    }
+
+                    .footer-grid {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        gap: spacing.$five;
+
+                        .location, .contacts {
+                            grid-column-start: 1;
+                            grid-column-end: 2;
+                            margin-bottom: spacing.$two;
+                        }
+
+                        .menu-one {
+                            grid-row-start: 1;
+                            grid-row-end: 2;
+                            grid-column-start: 2;
+                            grid-column-end: 3;
+                        }
+
+                        .menu-two {
+                            grid-row-start: 2;
+                            grid-row-end: 3;
+                            grid-column-start: 2;
+                            grid-column-end: 3;
+                        }
+
+                        .social {
+                            grid-column-start: 1;
+                            grid-column-end: 3;
+                            justify-content: center;
+                        }
+                    }
+
+                    .location, .phone, .email {
+                        display: flex;
+                        flex-direction: row;
+                        gap: spacing.$two;
+                    }
+                }
+            }
+
+            .email-section {
+                position: absolute;
+                bottom: 610px;
+                width: 75%;
+
+                .email-form {
+                    display: flex;
+                    flex-direction: column;
+
+                    .email-input {
+                        width: 100%;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@mixin smallScreen {
+    @media only screen and (max-width: 667px) {
+        body {
+
+            header {
+                margin: spacing.$seven spacing.$ten 0;
+            }
+
+            .feature-section {
+                width: 100%;
+                background-color: colors.$primary-main-bg;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: spacing.$nine 0;
+    
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: spacing.$eight;
+
+                    .feature-card {
+                        display: flex;
+                        max-width: 90%;
+                        flex-direction: column;
+                        align-items: center;
+                        max-width: 445px;
+                        gap: spacing.$two;
+
+                        .img {
+                            width: calc(90px * 0.8); 
+                            height: calc(78px * 0.8);
+                        }
+                    }
+                }
+            }
+            
+            .stayProductive-section-bg {
+                .stayProductive-section {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin: spacing.$eleven 0;
+                    gap: spacing.$seven;
+                    width: 90%
+                }
+            }
+
+            .testimonials-section-bg {
+                .testimonials-section {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    position: relative;
+
+                    .quotes-illustration {
+                        position: absolute;
+                        left: 60px;
+                    }
+                }
+            }
+
+            footer {
+                .footer-section {
+                    img[src*="logo"] {
+                        align-self: center;
+                    }
+
+                    .footer-grid {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        gap: spacing.$five;
+
+                        .location, .contacts {
+                            grid-column-start: 1;
+                            grid-column-end: 2;
+                            margin-bottom: spacing.$two;
+                        }
+
+                        .menu-one {
+                            grid-row-start: 1;
+                            grid-row-end: 2;
+                            grid-column-start: 2;
+                            grid-column-end: 3;
+                        }
+
+                        .menu-two {
+                            grid-row-start: 2;
+                            grid-row-end: 3;
+                            grid-column-start: 2;
+                            grid-column-end: 3;
+                        }
+
+                        .social {
+                            grid-column-start: 1;
+                            grid-column-end: 3;
+                            justify-content: center;
+                        }
+                    }
+
+                    .location, .phone, .email {
+                        display: flex;
+                        flex-direction: row;
+                        gap: spacing.$two;
+                    }
+                }
+            }
+
+            .email-section {
+                position: absolute;
+                bottom: 610px;
+                width: 75%;
+
+                .email-form {
+                    display: flex;
+                    flex-direction: column;
+                    
+                }
+            }
+        }
+    }
+}
+  
+

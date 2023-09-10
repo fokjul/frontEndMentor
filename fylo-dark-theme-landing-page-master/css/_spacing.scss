@@ -1,0 +1,22 @@
+/* Spaces, radius*/
+$one:      8px;
+$half:     calc($one * 0.5);
+$two:      calc($one * 2);
+$three:    calc($one * 3); //24px
+$four:     calc($one * 4); //32px
+$five:     calc($one * 5); //40px;
+$six:      calc($one * 6); //48px;
+$seven:    calc($one * 7); //56px;
+$eight:    calc($one * 8); //64px;
+$nine:     calc($one * 9); //72px;
+$ten:      calc($one * 10); //80px;
+$eleven:   calc($one * 11); //88px;
+$twelve:   calc($one * 12); //96px;
+$thirteen: calc($one * 13); //104px;
+
+/* Width*/
+
+@mixin max-section-width {
+    max-width: 1200px;
+    width: 90%;
+}

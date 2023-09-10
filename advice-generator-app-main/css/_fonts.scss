@@ -1,29 +1,50 @@
 /* Fonts*/
 :root {
-    font-size: 28px;
+    font-size: 14px;
 }
 
-@mixin font-family {
-    font-family: Manrope;
+@mixin font-family-body {
+    font-family: open sans;
 }
 
 @mixin body-copy {
-    @include font-family;
+    @include font-family-body;
     font-size: 1rem;
     font-style: normal;
-    font-weight: 800;
     line-height: normal;
     letter-spacing: -0.28px;
     text-align: center;
 }
 
-@mixin caption {
-    @include font-family;
-    font-size: 0.4rem;
+@mixin body-copy-regular {
+    @include body-copy;
+    font-weight: 400;
+}
+
+@mixin body-copy-bold {
+    @include body-copy;
+    font-weight: 700;
+}
+
+@mixin font-family-headings {
+    font-family: Raleway;
+}
+
+@mixin headings {
+    @include font-family-headings;
+    font-size: 1rem;
     font-style: normal;
-    font-weight: 800;
     line-height: normal;
-    letter-spacing: 4.8px;
-    text-transform: uppercase;
+    letter-spacing: -0.28px;
     text-align: center;
+}
+
+@mixin headings-regular {
+    @include headings;
+    font-weight: 400;
+}
+
+@mixin headings-bold {
+    @include headings;
+    font-weight: 700;
 }
